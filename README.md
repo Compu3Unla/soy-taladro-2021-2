@@ -10,5 +10,5 @@ Equipo con temática "eventos deportivos" que desarrolló la página de socios d
 * La ventana de registro está hecha con javascript que no es obligatorio para el desarrollo de los tps porque no entra en los temas.
 * El ingreso es a modo ilustrativo, no hacen falta hacer el registro.
 * Utilizaron iframes con Twitter y Youtube.
-* La galería de este grupo se aplicó en el index.
+* La versión mobile y la galería de este grupo se aplicó en el index.
 
