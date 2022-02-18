@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+<title>Formulario 3</title>
+</head>
+<body class="body_formularios">
+	<section class="contenedor_circulos_colores">
+		<button class="button_verde"></button>
+		<button class="button_verde"></button>
+		<button class="button_verde"></button>
+		</section>
+	<h1 class="titulo_formulario">¡Asociate solo en 3 pasos!</h1>
+	<p class="bajada_formulario">3° paso: Creá tu cuenta</p>
+	<form class="formulario_asociate" method="post" action="" target="_blank" enctype="text/plain">
+		<label class="dato_formulario" for="categoria">Categoría</label>
+			<select class="respuesta_dato_formulario" name="categoria" required>
+				<option value="1">Socie Menor (de 3 a 9 años) - $320</option> 
+				<option value="2">Socie Cadete (de 10 a 17 años) - $450</option> 
+				<option value="3">Socio Activo (mayor de 18 años) - $720</option>
+				<option value="4">Socia Dama (mayor de 18 años) - $600</option>
+				<option value="5">Socie Interior (Activo o Dama mayor de 18 años) - $260</option>
+				<option value="6">Socie Interior (Cadete o Menor de 3 a 17 años) - $200</option>
+				<option value="7">Grupo Familiar Interior (2 mayores de 18 años con hijos menores) - $650</option>
+				<option value="8">Grupo Familiar (2 mayores de 18 años con hijos menores) - $1250</option>
+				<option value="9">Socie Infantil (Pago único hasta cumplir los 3 años) - $350</option>
+				<option value="10">Pase 70% (mayor de 18 años) $550</option>
+		 	</select>
+		<label class="dato_formulario" for="mediodepago">Medio de Pago</label>
+			<select class="respuesta_dato_formulario" name="mediodepago" required>
+				<option value="1">Efectivo</option> 
+				<option value="2">Mercado Pago</option> 
+				<option value="3">Débito automático</option>
+			</select>		
+		<label class="dato_formulario" for="correo">Correo electrónico</label>
+			<input class="respuesta_dato_formulario" name="correo" type="email" id="correo" placeholder="Ej: hola@gmail.com" required>
+		<label class="dato_formulario" for="contrasena">Contraseña</label>
+			<input class="respuesta_dato_formulario" name="contrasena" type="password" id="contrasena" placeholder="*********" required>
+		<label class="dato_formulario" for="repetircontrasena">Repetir contraseña</label>
+			<input class="respuesta_dato_formulario" name="repetircontrasena" type="password" id="repetircontrasena" placeholder="*********" required>
+		<div class="div_boton_2_3 boton">
+			<button class="boton_volver" onclick="location.href='formulario2.html'">VOLVER</button>
+			<button class="boton_siguiente" onclick="location.href='formulariofin.html'">FINALIZAR</button>
+		</div>
+		
+	</form>
+
+</body>
+</html>

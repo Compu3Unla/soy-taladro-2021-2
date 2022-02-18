@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+<title>Formulario 2</title>
+</head>
+<body class="body_formularios">
+	<section class="contenedor_circulos_colores">
+		<button class="button_verde"></button>
+		<button class="button_verde"></button>
+		<button class="button_dorado"></button>
+		</section>
+	<h1 class="titulo_formulario">¡Asociate solo en 3 pasos!</h1>
+	<p class="bajada_formulario">2° paso: Completá tus datos de contacto</p>
+	<form class="formulario_asociate" method="post" action="" target="_blank" enctype="text/plain">
+		<label class="dato_formulario" for="pais">Pais</label>
+			<input class="respuesta_dato_formulario" name="pais" type="text" id="pais" placeholder="Ej: Argentina" required>
+		<label class="dato_formulario" for="provincia">Provincia</label>
+			<input class="respuesta_dato_formulario" name="provincia" type="text" id="provincia" placeholder="Ej: Buenos Aires" required>
+		<label class="dato_formulario" for="localidad">Localidad</label>
+			<input class="respuesta_dato_formulario" name="localidad" type="text" id="localidad" placeholder="Ej: Temperley" required>
+		<label class="dato_formulario" for="direccion">Dirección completa</label>
+			<input class="respuesta_dato_formulario" name="direccion" type="text" id="direccion" placeholder="Ej: Av. Siempreviva 123" required>
+		<label class="dato_formulario" for="celular">Celular</label>
+			<input class="respuesta_dato_formulario" name="celular" type="number" id="celular" placeholder="Ej: 011 1111 1111" required>
+		
+		
+		<div class="div_boton_2_3">
+			<button class="boton_volver" onclick="location.href='formulario1.html'">VOLVER</button>
+			<button class="boton_siguiente" onclick="location.href='formulario3.html'">SIGUIENTE</button>
+		</div>
+		
+	</form>
+</body>
+</html>

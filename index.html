@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0">
+    <!-- Favicon y titulo -->
+    <link rel="icon" href="img/logos/favicon.ico" type="image/x-icon">
+    <title>SoyTaladro</title>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Hoja de Estilo para que la animacion se inicie en scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <!-- Estilo de la página -->
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="body_sitio">
+    <!-- Header y Nav -->
+    <header id="header_landing">
+        <a id="logo" href="index.html">
+            <img src="img/logos/imagotipo_contorno.png" width="260px" height="87.32px" alt="Logo_SoyTaladro">
+        </a>
+        <a id="logo_mini" href="index.html">
+            <img src="img/logos/logo_contorno.png" width="86px" height="89.38px" alt="Logo_SoyTaladro">
+        </a>
+        <nav id="nav_landing">
+            <ul>
+                <li id="boton_ingresar">
+                    <a href="#ubicacion_ingresar">INGRESAR</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Carrusel -->
+    <section class="seccion_carrusel">
+        <a href="#ubicacion_ingresar">
+            <div id="scroll">
+                <div id="circulo_scroll"></div>
+            </div>
+        </a>
+        <div class="contenedor_controles">
+        <img src="img/iconos/flecha.png" alt="" class="control" id="Prev">
+        <img src="img/iconos/flecha.png" alt="" class="control" id="Next">
+        </div>
+        <img src="img/banners/banner1.png" alt="" class="carrusel_background_img" id="Image">
+    </section>
+    <!-- Seccion Ingresar -->
+    <main class="main_landing_page">
+        <div id="ubicacion_ingresar"></div>
+        <section id="caja_ingresar" data-aos="zoom-out">
+            <h2 class="h2_caja_ingresar">Ingresá a tu cuenta:</h2>
+            <form id="form_ingresar" method="post" action="#" target="_blank" enctype="text/plain">
+                <ul>
+                    <li>
+                        <input type="text" class="caja_formulario" id="correo_electronico" name="correo_electronico"
+                            placeholder="Correo electrónico" required>
+                    </li>
+                    <li>
+                        <input type="password" class="caja_formulario" id="contraseña" name="contraseña"
+                            placeholder="Contraseña" required>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked="checked" name="remember"> Mantener sesión iniciada
+                    </li>
+                    <li>
+                        <button type="submit" class="boton_formulario" name="boton_ingresar" onclick="location.href='home.html'" enctype="text/plain">INGRESÁ</button>
+                    </li>
+                    <li>
+                        <span><a href="#">¿Olvidaste tu contraseña?</a></span>
+                    </li>
+                </ul>
+            </form>
+            <h2 class="h2_caja_ingresar">¿Todavía no sos socio?</h2>
+            <p class="p_caja_ingresar">Completá los pasos y asociate.<br>¡Es rápido y fácil!</p>
+            <a href="#miModal">
+            <button type="submit" class="boton_formulario" name="boton_asociarse" onclick="" enctype="text/plain">¡ASOCIATE!</button>
+            </a>
+        </section>
+        <!-- Ventana Modal del formulario para asociarse -->
+        <section>
+            <div id="miModal" class="modal">
+              <div class="modal-contenido">
+                <div id="contenedor_x">
+                    <a href="#ubicacion_ingresar" id="boton_x">X</a>
+                </div>
+                <iframe class="iframe_formulario" src="formulario1.html"></iframe>
+              </div>  
+            </div>
+        </section>
+        <section data-aos="fade-up">
+            <h1 class="texto_club_socios"> EL CLUB ES DE LOS SOCIOS</h1>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer_landing">
+        <section id="posicion_redes_footer">
+            <a href="https://www.facebook.com/ClubAtleticoBanfield/" target="_blank">
+                <img class="redes" src="img/redes/facebook.svg" width="28px" height="28,63px" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/CAB_OFICIAL/" target="_blank">
+                <img class="redes" src="img/redes/instagram.svg" width="30px" height="28,85px" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/user/BanfieldOficial" target="_blank">
+                <img class="redes" src="img/redes/youtube.svg" width="37px" height="24,68px" alt="Youtube">
+            </a>
+            <a href="https://twitter.com/CAB_oficial" target="_blank">
+                <img class="redes" src="img/redes/twitter.svg" width="36px" height="28,85px" alt="Twitter">
+            </a>
+        </section>
+        <section id="posicion_texto_footer">
+            <div>SOYTALADRO © 2021</div>
+            <div>Todos los derechos reservados.</div>
+        </section>
+    </footer>
+    <!-- Script Carrusel -->
+    <script src="js/code.js"></script>
+    <!-- Fin Script Carrusel -->
+    <!-- Script para que la animacion se inicie en scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <!-- Fin Script para que la animacion se inicie en scroll -->
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht=device-width, initial-scale=1">
+    <!-- Favicon y titulo -->
+    <link rel="icon" href="img/logos/favicon.ico" type="image/x-icon">    
+    <title>SoyTaladro</title>
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+    <!-- Estilo de la página -->
+    <link href="estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="body_sitio">
+    <!-- Header y Nav -->
+   <header class="navbar">
+        <a href="home.html">
+            <img class="logo_blanco" src="img/logos/logo_transparente_blanco.svg" alt="Logo_SoyTaladro">
+            <img class="logo_verde" src="img/logos/logo_transparente.svg" alt="Logo_SoyTaladro"> 
+        </a>
+        <nav class="navbar_botonera">
+            <ul>
+                <li>
+                    <a href="#">Club Banfield</a>
+                    <ul>
+                        <li>
+                            <a href="deportes.html">Deportes</a>
+                        </li>
+                        <li>
+                            <a href="#">Colonia de vacaciones</a>
+                        </li>
+                        <li>
+                            <a href="#">Instalaciones</a>
+                        </li>
+                        <li>
+                            <a href="#">Peñas</a>
+                        </li>
+                        <li>
+                            <a class="nav_tienda" href="https://shopclubabanfield.mitiendanube.com/" target="_blank">IR A TIENDA</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Mis Gestiones</a>
+                    <ul class="nav_gestiones">
+                        <li>
+                            <a href="#">Pagar cuotas</a>
+                        </li>
+                        <li>
+                            <a href="#">Mis pagos</a>
+                        </li>
+                        <li>
+                            <a href="#">Pagar cuotas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Beneficios</a>
+                </li>
+                <li>
+                    <a href="#">Ayuda</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav_mi_perfil">
+            <ul class="flecha_contenedor">
+                <li>
+                    <a href="#"><div class="flecha_mi_perfil"></div></a>
+                    <ul>
+                        <li>
+                            <a href="mi_perfil.html">Mi perfil</a>
+                        </li>
+                         <li>
+                            <a href="#">Grupo familiar</a>
+                        </li>
+                        <li>
+                            <a href="index.html">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="img/mi_perfil/juan_mini.jpg" alt="Foto_Perfil">
+        </div>
+    </header>
+    <!-- Main -->
+    <main>
+        <div id="animacion_home">
+            <h1>LA PASIÓN VIVE</h1>
+            <h1>EN EL SUR</h1>
+        </div>
+        <section id="secccion_sugerencias_noticias">
+        <div id="twitter_embed">
+            <a class="twitter-timeline" data-width="100%" data-height="100%" href="https://twitter.com/CAB_oficial?ref_src=twsrc%5Etfw"></a>
+        </div>
+        <div id="sugerencias_contenedor">
+            <div id="sugerencias_estadio">
+                <div>
+                    <h2>¡Visitá el Lencho!</h2>
+                    <p>Vení a conocer el Estadio Florencio "Lencho" Sola y sacate fotos en el campo de juego.</p>
+                </div>
+                <a href="#"><img id="icono_estadio" src="img/iconos/estadio_negro.svg" width="75px" alt="Icono_Estadio"></a>
+            </div>
+            <div id="sugerencias_news">
+                <div>
+                    <h2>El newsletter de SoyTaladro</h2>
+                    <p>Inscribite a nuestro newsletter y enterate de todo lo que necesitás saber como socio.</p>
+                </div>
+                <a href="#"><img id="icono_news" src="img/iconos/news_blanca.svg" width="75px" alt="Icono_News"></a>
+            </div>
+        </div>
+        </section>
+        <section id="video">
+            <video src="video/video_aniversario.mp4" autoplay controls loop width="700"></video>
+        </section>
+    </main>
+    <!-- Footer -->
+     <footer class="footer_home">
+        <section id="posicion_redes_footer">
+            <a href="https://www.facebook.com/ClubAtleticoBanfield/" target="_blank">
+                <img class="redes" src="img/redes/facebook.svg" width="28px" height="28,63px" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/CAB_OFICIAL/" target="_blank">
+                <img class="redes" src="img/redes/instagram.svg" width="30px" height="28,85px" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com/user/BanfieldOficial" target="_blank">
+                <img class="redes" src="img/redes/youtube.svg" width="37px" height="24,68px" alt="Youtube">
+            </a>
+            <a href="https://twitter.com/CAB_oficial" target="_blank">
+                <img class="redes" src="img/redes/twitter.svg" width="36px" height="28,85px" alt="Twitter">
+            </a>
+        </section>
+        <section id="posicion_texto_footer">
+            <div>SOYTALADRO © 2021</div>
+            <div>Todos los derechos reservados.</div>
+        </section>
+    </footer>
+    <!-- Script Navbar -->
+    <script src="js/navbar.js"></script>
+    <!-- Script Twitter -->
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>

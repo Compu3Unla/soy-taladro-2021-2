@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="estilos.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+<title>Formulario 1</title>
+</head>
+<body class="body_formularios">
+	<section class="contenedor_circulos_colores">
+	<button class="button_verde"></button>
+	<button class="button_dorado"></button>
+	<button class="button_dorado"></button>
+	</section>
+	<h1 class="titulo_formulario">¡Asociate solo en 3 pasos!</h1>
+	<p class="bajada_formulario">1° paso: Completá tus datos personales</p>
+	<form class="formulario_asociate" method="post" action="" target="_blank" enctype="text/plain">
+		<label class="dato_formulario" for="nombre">Apellido y Nombre</label>
+			<input class="respuesta_dato_formulario" name="apellido_nombre" type="text" id="apellido_nombre" placeholder="Ej:Gonzalez Carlos" required>
+	
+		<label class="dato_formulario" for="tipodocumento">Tipo de documento</label>
+			<select class="respuesta_dato_formulario" name="tipodocumento" required>
+			   <option value="1">DNI</option> 
+			   <option value="2">Libreta Cívica</option> 
+			   <option value="3">Libreta de Enrolamiento</option>
+			   <option value="4">Cedula de Identidad</option>
+			</select>
+		<label class="dato_formulario" for="ndocumento">N° de Documento</label>
+			<input class="respuesta_dato_formulario" name="ndocumento" type="number" id="ndocumento" placeholder="Ej: 11111111" required>
+		<label class="dato_formulario" for="fechanacimiento">Fecha de Nacimiento</label>
+			<input class="respuesta_dato_formulario" name="fechanacimiento" type="date" id="fechanacimiento" placeholder="dd/mm/aaaa" required>
+		<label class="dato_formulario" for="sexo">Sexo</label>
+			<select class="respuesta_dato_formulario" name="sexo" required>
+			   <option value="1">Femenino</option> 
+			   <option value="2">Masculino</option> 
+			   <option value="3">No Binario</option>
+			</select>
+		<div class="div_boton_1">
+			<button class="boton_siguiente" onclick="location.href='formulario2.html'">SIGUIENTE</button>
+		</div>
+</form>
+</body>
+</html>

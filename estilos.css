@@ -1,0 +1,1570 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/*--- GENERAL --- */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.body_sitio {
+	display:flex;
+	flex-direction: column;
+	font-family: 'Roboto', sans-serif;
+	background-image: url("img/banners/fondo_section.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:center;
+}
+
+nav ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* Footer*/
+footer{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 50px;
+	background-color: #FFFFFF;
+	color: #4F4F4F;
+	align-content: center;
+	align-items: center;
+	padding: 16px 0px;
+	font-size: 0.8em;
+}
+
+.redes {
+	padding: 0px 8px;
+}
+
+.redes:hover {
+	filter: invert(34%) sepia(34%) saturate(7442%) hue-rotate(137deg) brightness(96%) contrast(91%);
+	transition: all 0.8s;
+}
+
+#posicion_redes_footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 0px 0px 64px;
+}
+
+#posicion_texto_footer {
+	padding: 0px 64px 0px 0px;
+	text-align: right;
+}
+
+/*--- LANDING PAGE ---*/
+
+/* Header, logo, boton ingresar */
+#header_landing {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 75px;
+	background-color: #FFFFFF;
+	position: fixed;
+    z-index: 100;
+	box-shadow: 0px 2px 10px 0px #4f4f4f93;
+}
+
+#logo {
+	padding: 15px 0px 0px 45px;
+	position: fixed;
+}
+
+#logo_mini {
+	padding: 15px 0px 0px 45px;
+	position: fixed;
+}
+
+#nav_landing {
+	font-family: 'Poppins', sans-serif;
+	text-align: right;
+	padding: 29px 100px 0px 0px;
+}
+
+/* Boton para ingresar al home y enlace a */
+#boton_ingresar {
+	text-align: right;
+	font-weight: 600;
+}
+
+#boton_ingresar a {
+	color: #0B9649;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	border: 1px solid #0B9649;
+	box-sizing: border-box;
+	border-radius: 5px;
+	padding: 6px 14px;
+	transition: all 0.5s;
+	font-size: 0.6em;
+}
+
+#boton_ingresar a:hover {
+	color: #FFFFFF;
+    border: none;
+	background-color: #BE9C52;
+}
+
+/* ID que dirige a la ubicacion para ingresar al home */
+#ubicacion_ingresar {
+}
+
+/* Main, Caja ingresar, form, h2 y p de la caja */
+.main_landing_page {
+	width: 100%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#caja_ingresar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #FFFFFF;
+	margin-top: 180px;
+	text-align: center;
+	line-height: 25px;
+	padding: 64px 80px 64px 80px;
+	color: #A3A3A3;
+	border-radius: 10px;
+	box-shadow: 0px 2px 10px 0px #333333;
+}
+
+#form_ingresar {
+	color: #4F4F4F;
+	padding-bottom: 48px;
+}
+
+#form_ingresar a {
+	text-decoration: none;
+	color: #4F4F4F;
+}
+
+#form_ingresar a:hover {
+	opacity: 0.8;
+}
+
+#form_ingresar ul li {
+	list-style: none;
+	padding: 8px 0px;	
+}
+
+.caja_formulario {
+	width: 359px;
+	height: 44px;
+	background: #FFFFFF;
+	border: 1px solid #ACACAC;
+	box-sizing: border-box;
+	border-radius: 8px;
+	padding: 8px 16px;
+	color: #ACACAC;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.boton_formulario {
+	width: 320px;
+	height: 75px;
+	background-color: #BE9C52;
+	color: #FFFFFF;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 1.5em;
+	border: none;
+	transition: all 0.8s;
+	border-radius: 10px;
+}
+
+.boton_formulario:hover {
+	opacity: 0.8;
+}
+
+.h2_caja_ingresar {
+	color: #4F4F4F;
+	padding: 0px 0px 16px 0px;
+	font-size: 2em;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1em;
+}
+
+.p_caja_ingresar {
+	color: #4F4F4F;
+	font-size: 1.125em;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	padding: 0px 0px 32px 0px;
+}
+
+/* Texto "El club es de los socios" */
+.texto_club_socios {
+	font-family: 'Poppins', sans-serif;
+	font-size: 4.5em;
+	font-weight: 700;
+  margin: 176px 0px;
+	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 0.045em;
+}
+
+/* Ventana Modal del formulario para asociarse */
+.modal-contenido{
+  background-color:white;
+  width: fit-content;
+	height: fit-content;
+	margin: 120px auto 0px;
+  border-radius: 10px;
+}
+
+.modal{
+  background-color: rgba(0,0,0,.8);
+	margin:auto;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+
+#miModal:target{
+  opacity:1;
+  pointer-events:auto;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.iframe_formulario{
+  width: 530px;
+	height: 700px;
+	border:none;
+}
+
+#contenedor_x{
+	display: flex;
+	align-items: flex-end;	
+	justify-content: center;	
+	flex-direction: column;
+	padding: 10px;
+}
+
+/* Carrusel */
+.seccion_carrusel{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: transparent;
+	justify-content: center;
+	align-content: center;
+}
+
+.contenedor_controles{
+	margin-top: 110px;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: space-between;
+}
+
+.control{
+	position:absolute;
+	left: 50px;
+	transform: translateY(-50%) rotate(90deg);
+	height: 45px;
+	cursor: pointer;
+	z-index: 10;
+	opacity: 1;
+}
+
+.control:nth-of-type(2){
+	transform: translateY(-50%) rotate(270deg);
+	left: auto;
+	right: 60px;
+}
+
+.control:hover{
+	opacity: 0.5;
+}
+
+.carrusel_background_img{
+	margin-top: 75px;
+	width: 100%;
+	transition: 2s;
+	box-shadow: 0px 7px 20px 2px #00000070;
+}
+
+/* Animacion Scroll (Mouse)*/
+#scroll {
+    height: 50px;
+    width: 30px;
+    border: solid 2px #FFFFFF;
+    border-radius: 15px;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+}
+
+#circulo_scroll {
+    height: 10px;
+    width: 10px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin-top: 6px;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+}
+
+#scroll:hover {
+    filter: invert(67%) sepia(61%) saturate(347%) hue-rotate(3deg) brightness(84%) contrast(88%);
+	transition: all 0.8s;
+}
+
+.seccion_carrusel a {
+    position: absolute;
+    margin-top: 45%;
+}
+
+/*--- HOME,MI PERFIL,DEPORTES ---*/
+
+/* Navbar */
+.navbar {
+    display: flex;
+	flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+	position: fixed;
+    z-index: 500;
+    box-shadow: 0px 4px 14px 0px #00000045;
+    transform: 3s ease;
+}
+
+.navbar_botonera {
+    display: flex;
+    position: absolute;
+    left: 176px;
+    margin-top: 10px;
+}
+
+.navbar_botonera ul {
+    display: flex;
+}
+
+.navbar_botonera ul li {
+    padding-bottom: 10px;
+    margin-right: 32px;
+}
+
+.navbar_botonera a {
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    transition: all 0.5s ease;
+}
+
+.navbar_botonera a:hover {
+    color: #BE9C52;
+    border: solid 1.5px #BE9C52;
+	border-radius: 5px;
+    padding: 4px 8px;
+}
+
+.navbar_botonera ul ul {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+}
+   
+.navbar_botonera ul ul li {
+    padding: 10px 75px 10px 25px;
+    transition: all 0.15s ease;
+    margin: 0px;
+}
+
+.navbar_botonera ul ul a {
+    color: #4F4F4F;
+    font-weight: 500;
+    font-size: 0.8em;
+    transition: all 0.15s ease;
+}
+
+.navbar_botonera .nav_tienda {
+    color: #BE9C52;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.navbar_botonera ul li:hover ul {
+    display: block;
+}
+
+.navbar_botonera ul ul li:hover a {
+    border: none;
+    color: #FFFFFF;
+    padding: 0px;
+}
+
+.navbar_botonera ul ul li:hover {
+    background-color: #BE9C52;
+}
+
+.navbar_botonera .nav_gestiones li:hover {
+    background-color: #015A2F;
+}
+
+.nav_mi_perfil {
+    height: 75px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    right: 64px;
+}
+
+.flecha_contenedor li {
+    height: 75px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_mi_perfil img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.flecha_mi_perfil {
+    width: 10px;
+    height: 10px;
+    border-top: solid 3px #FFFFFF;
+    border-right: solid 3px #FFFFFF;
+    transform: rotate(135deg);
+    transition: all 0.2s ease;
+}
+
+.nav_mi_perfil ul ul {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 75px;
+    right: 0;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+}
+
+.nav_mi_perfil ul ul li {
+    padding: 10px 45px 10px 25px;
+    transition: all 0.15s ease;
+    height: auto;
+    width: auto;
+    justify-content: flex-start;
+}
+
+.nav_mi_perfil ul ul a {
+    color: #BE9C52;
+    font-weight: 500;
+    font-size: 0.8em;
+    transition: all 0.15s ease;
+}
+
+.nav_mi_perfil ul ul li:hover {
+    background-color: #BE9C52;
+}
+
+.nav_mi_perfil ul ul li:hover a {
+    color: #FFFFFF;
+    padding: 0px;
+}
+
+.nav_mi_perfil ul li:hover ul {
+    display: block;
+}
+
+.nav_mi_perfil li:hover .flecha_mi_perfil {
+    transform: rotate(315deg);
+    border-color: #BE9C52;
+}
+
+.logo_blanco {
+    width: 35px;
+    margin-left: 64px;
+}
+
+.logo_blanco:hover {
+    opacity: 0.6;
+    transition: all 0.4s ease;
+}
+
+.logo_verde {
+    width: 30px;
+    position: relative;
+    left: -35px;
+    visibility: hidden;
+}
+
+.logo_verde:hover {
+    opacity: 0.6;
+    transform: all 0.4s ease;
+}
+
+.scroll_nav {
+    background-color: #FFFFFF;
+    height: 55px;
+    transition: 0.5s ease-in;
+}
+
+.scroll_nav a {
+    color:#005930
+}
+
+.scroll_nav .logo_blanco {
+    visibility: hidden;
+}
+
+.scroll_nav .logo_verde {
+    visibility: visible;
+}
+
+.scroll_nav .navbar_botonera ul ul {
+    margin-top: 6px;
+}
+
+.scroll_nav .flecha_mi_perfil {
+    border-color: #005930;
+}
+
+.scroll_nav .nav_mi_perfil img {
+    transform: scale(0.7);
+    transition: all 0.5s ease;
+}
+
+.scroll_nav .nav_mi_perfil ul ul {
+    top: 55px;
+}
+
+/*--- HOME ---*/
+
+
+/* Animación "La pasión vive en el Sur" */
+#animacion_home {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	color: #FFFFFF;
+	height: 3em;
+	margin: 125px auto 50px;
+	max-width: 80%;
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+}
+
+#animacion_home h1 {
+	padding-right: 0.3em;
+}
+
+#animacion_home h1:nth-child(1) {
+	margin-top: 2em;
+	animation-name: aparecer_1;
+	animation-duration: 1s;
+	animation-delay: 0.2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes aparecer_1 {
+	0% {
+			margin-top: 2em;
+	}
+	100% {
+			margin-top: 0px;
+	}
+}
+
+#animacion_home h1:nth-child(2) {
+	color: #BE9C52; 
+	margin-top: -2em;
+	animation-name: aparecer_2;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes aparecer_2 {
+	0% {
+			margin-top: -2em;
+	}
+	100% {
+			margin-top: 0px;
+	}
+}
+
+/* Section sugerencias y noticias */
+#secccion_sugerencias_noticias {
+	display: flex;
+	justify-content: center;
+	margin: 0px auto 50px;
+	max-width: 85%;
+}
+
+/* Twitter */
+#twitter_embed {
+	width: 550px;
+	height: 350px;
+	box-shadow: 0px 4px 14px 0px #00000045;
+	border-radius: 10px;
+	margin: 0px 30px;
+}
+
+/* Sugerencias */
+#sugerencias_contenedor {
+	width: 550px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: 0px 30px;
+}
+
+#sugerencias_news {
+	width: 100%;
+	height: 45%;
+	border-radius: 10px;
+	background-color: #FFFFFF25;
+	box-shadow: 0px 4px 14px 0px #00000045;
+	color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+#sugerencias_estadio {
+	width: 100%;
+	height: 45%;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 4px 14px 0px #00000045;
+	color: #4F4F4F;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+#sugerencias_estadio, #sugerencias_news {
+	padding: 15px 25px;
+	box-sizing: border-box;
+} 
+
+#sugerencias_contenedor h2 {
+	font-family: 'Poppins',sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.01em;
+	font-size: 1.3em;
+	padding-bottom: 5px;
+	line-height: 1.15em;
+}
+
+#sugerencias_contenedor p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 0.8em;
+}
+
+#icono_estadio, #icono_news {
+	display: flex;
+	margin: 25px;
+}
+
+#icono_estadio:hover {
+	filter: invert(0.5) sepia(1) saturate(160%);
+	transition: all 0.5s;
+}
+
+#icono_news:hover {
+	filter: invert(0.5) sepia(1) saturate(185%);
+	transition: all 0.5s;
+}
+
+/* Section video */
+#video {
+	display: flex;
+	justify-content: center;
+	margin: 0px auto 50px;
+	max-width: 75%;
+}
+
+/*--- MI PERFIL ---*/
+
+.seccion_perfil{
+	margin: 150px 0px 0px 0px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	padding: 33px 0px 160px;
+}
+
+.contenedor_perfil{
+	margin: 0px 30px;
+	display: flex;
+	width: 771px;
+	height: 655px;
+	box-shadow: 0px 5px 19px #333333;
+	border-radius: 10px;
+	background-color: #FFFFFF20;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0px 40px;
+}
+
+.titulo_perfil{
+	font-family: 'Poppins', sans-serif;
+	font-size: 2em;
+	font-weight: 600;
+	color:#FFFFFF;
+	padding: 20px 0px 30px 0px;
+}
+
+.titulo_datos{
+	font-family: 'Poppins', sans-serif; 
+	font-size: 1.2em;
+	font-weight: 500;
+	color:#FFFFFF;
+	padding: 0px 0px 10px 0px;
+}
+
+.linea_titulo{
+	border-top: #FFFFFF 1px solid;
+}
+
+.caja_datos{
+ display: flex;
+ flex-direction: row;
+ align-content: center;
+ justify-content: space-around;
+ align-items: center;
+ padding: 10px 0px 20px 0px;
+}
+
+.columna_datos1{
+	width: 250px;
+}
+
+.columna_datos1 li{
+	list-style: none;
+}
+
+.columna_datos2{
+	padding: 0px 0px 0px 40px;
+	width: 250px;
+}
+
+.columna_datos2 li{
+	list-style: none;
+	padding: 4px 0px;
+}
+
+.caja_datos_titulo{
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.8em;
+	font-weight: 500;
+	color: #FFFFFF60;
+	padding: 10px 0px 5px 0px;
+}
+
+.caja_datos_texto{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	color:#FFFFFF;
+}
+
+.contenedor_avatar{
+	display: flex;
+	width: 395px;
+	height: 655px;
+	box-shadow: 0px 5px 19px #333333;
+	border-radius: 10px;
+	background-color: #FFFFFF20;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	margin: 0px 30px;
+}
+
+#nombre_socio{
+	font-family: 'Poppins', sans-serif;
+	font-size: 3em;
+	font-weight: 600;
+	color:#FFFFFF;
+	text-align: center;
+	line-height: 1.1em;
+}
+
+#numero_socio{
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	color:#FFFFFF;
+	padding: 0px 0px 5px 0px;
+}
+
+#estado_socio{
+	font-family: 'Poppins', sans-serif; 
+	font-size: 1.2em;
+	font-weight: 600;
+	color:#FFFFFF;
+}
+
+#cambiar_categoria{
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.7em;
+	font-weight: 400;
+	color:#FFFFFF;
+	padding: 0px 0px 30px 0px;
+}
+
+#cambiar_categoria a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+#cambiar_categoria a:hover{
+	color:#FFFFFF70;
+}
+
+#foto_avatar{
+	border-radius: 50%;
+	padding: 10px;
+}
+
+#foto_qr{
+
+}
+
+#foto_qr:hover{
+opacity: 0.8;
+}
+
+/*--- DEPORTES ---*/
+
+.main_deportes{
+	margin-top: 120px;
+	margin-bottom: 185px;
+}
+
+.contenedor_deportes{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+}
+
+.texto_deportes{
+	padding: 120px 0px 10px 0px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 40px;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 34px rgba(0, 0, 0, 0.25);
+	border-bottom: #BE9C52 3px solid;
+	margin: 0px 200px;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+/*Galeria*/
+.celda_galeria {
+  height: 300px;
+	margin-right: 20px;
+  margin-bottom: 50px;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+	opacity: 0.6;
+	transition: transform 500ms;
+	transform: scale(0.9,0.9);
+}
+
+.celda_galeria:hover{
+	opacity: 1;
+	transform: scale(1,1);
+}
+
+.galeria {
+	margin: 75px 0px;
+}
+
+/* Ventana Modal Deportes*/
+
+.modal_futbol{
+	background-color: rgba(0,0,0,.8);
+	position: absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	opacity:0;
+	pointer-events:none;
+	transition: all 1s;
+}
+.modal-contenidodeporte{
+  	background-color:white;
+  	width: fit-content;
+	height: fit-content;
+	margin: auto auto;
+  	border-radius: 10px;
+}
+
+#miModal:target{
+	opacity:1;
+	pointer-events:auto;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.iframe_futbol{
+  	width: 900px;
+  	height: 500px;
+  	border:none;
+  	padding: 0px 35px 45px 35px;
+}
+
+#contenedor_xdeporte{
+	display: flex;
+	align-items: flex-end;	
+	justify-content: center;	
+	flex-direction: column;
+	padding: 10px;
+}
+#boton_xdeporte{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px;
+  	border: none;
+	width: 24px;
+	height: 24px;
+  	border-radius: 50%;
+	background: #E5E5E5;
+  	font-family: 'Roboto', sans-serif;
+	color: #333333;
+	font-weight: 400;
+}
+
+/*Futbol Modal*/
+
+.body_futbol{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: left;
+	padding-left: 20px 0px;
+}
+.mainfutbol{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+.contenedor_titulo_deportes{
+	display: flex;
+	align-items: center;
+	padding: 0px 0px 20px 0px;
+	align-content: center;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.titulo_futbol{
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 4em;
+	color: #0B9649;
+	margin-left: 20px;
+	border-bottom: 7px solid #0B9649;
+	width: 740px;
+	line-height: 1.1em;
+}
+
+.linea_titulo_deporte{
+	border-top: 42px solid #0B9649;
+}
+
+.subtitulodeporte{
+	font-size: 1em;
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
+	color: #0B9649;
+	font-weight: 800;
+	padding: 5px 0px;
+}
+
+.contenedor_dato_deporte{
+	padding: 0px 0px 0px 19px;
+}
+
+.datodeporte{
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 22px;
+	color: #4F4F4F;
+	font-size: 0.8em;
+}
+
+.datodeportebold{
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 800;
+	line-height: 22px;
+	font-size: 0.8em;
+	color: #4F4F4F;
+}
+
+.contenedor_mapa_boton{
+	display:flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	padding-top: 17px;
+}
+
+.mapa{
+	box-shadow: 0px 2px 10px 0px #33333340;
+	border-radius: 10px;
+	margin: 0px 0px 35px 0px;
+}
+
+.boton_inscribite{
+	width: 210px;
+	height: 55px;
+	background-color: #BE9C52;
+	color: #FFFFFF;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 1em;
+	border: none;
+	transition: all 0.8s;
+	border-radius: 10px;
+}
+
+.boton_inscribite:hover {
+	opacity: 0.8;
+}
+
+/*--- FORMULARIO ASOCIARSE ---*/
+
+.body_formularios{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+}
+
+.button_verde{
+	width: 15px;
+	height: 15px;
+	position: static;
+	left: 0px;
+	top: 0px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 8px;
+	background: #015A2F;
+    border: 2px solid #015A2F; 
+	border-radius: 50%;
+}
+
+.button_dorado{
+	position: static;
+	width: 15px;
+	height: 15px;
+	left: 84px;
+	top: 0px;
+	flex: none;
+	order: 2;
+	flex-grow: 0;
+	margin: 0px 8px;
+	background: #BE9C52;
+	border: 2px solid #015A2F;
+	box-sizing: border-box;
+	border-radius: 50%;
+}
+
+.titulo_formulario{
+	position: static;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 28px;
+	color: #015A2F;
+}
+
+.bajada_formulario{
+    font-family: 'Poppins', sans-serif;
+	color: #015A2F;
+	font-size: 1em;
+}
+
+.formulario_asociate{
+	display: flex;
+	flex-direction: column;
+}
+
+.dato_formulario{
+    font-family: 'Poppins', sans-serif;
+	padding-top: 16px;
+}
+
+.respuesta_dato_formulario {
+	padding: 14px 16px;
+	width: 349px;
+	height: 44px;
+	top: 28px;
+	background: #FFFFFF;
+	border: 1px solid #D1D1D1;
+	box-sizing: border-box;
+	border-radius: 8px;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 0.8em;
+	line-height: 16px;
+	color: #4F4F4F;
+}
+
+.div_boton_1{
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 55px;
+}
+
+.div_boton_2_3{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 55px;
+}
+
+.boton_siguiente{
+	padding: 8px 20px;
+	width: 150px;
+	height: 44px;
+	background: #0B9649;
+    border: none;
+	border-radius: 8px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 0.8em;
+	color: #FFFFFF;
+}
+
+.boton_volver{
+	padding: 8px 20px;
+	width: 150px;
+	height: 44px;
+	background: #015A2F;
+    border: none;
+	border-radius: 8px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 0.8em;
+	color: #FFFFFF;
+}
+
+#ubicacion_finalizar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	padding: 70px 50px 0px 50px;
+}
+
+.titulo_finalizar {
+  font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+	font-size: 2.8em;
+  line-height: 120%;
+	text-align: center;
+	color: #015A2F;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+
+.bajada_finalizar{
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2em;
+	text-align: center;
+	color: #54595E;
+  padding-bottom: 50px;
+}
+
+.boton_finalizar {
+  padding: 8px 20px;
+	width: 150px;
+	height: 44px;
+	background: #015A2F;
+  border: none;
+	border-radius: 8px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 0.8em;
+	color: #FFFFFF;
+}
+
+#boton_x{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2px;
+  border: none;
+	width: 24px;
+	height: 24px;
+  border-radius: 50%;
+	background: #E5E5E5;
+  font-family: 'Roboto', sans-serif;
+	color: #333333;
+	font-weight: 400;
+}
+
+#boton_x:hover{
+	color: #FFFFFF;
+	background-color: #BE9C52;
+	transition: all 0.5s;
+}
+
+.contenedor_circulos_colores{
+	padding: 20px 0px;
+}
+
+.boton_siguiente:hover{
+	background-color: #BE9C52;
+	transition: all 0.5s;
+}
+
+.boton_volver:hover{
+	background-color: #A3A3A3;
+	transition: all 0.5s;
+}
+
+.boton_finalizar:hover{
+	background-color: #BE9C52;
+	transition: all 0.5s;
+}
+
+/* ------------------------------------------ MEDIA -------------------------------- */
+
+/* Landing Celular */
+@media (max-width: 320px) {
+
+body{
+	font-size: 0.8em;
+}
+	
+#header_landing {
+	align-items: center
+}
+	
+#logo {
+	display:none;
+}
+
+#logo_mini {
+	margin-right: 70px;
+}
+
+#nav_landing {
+    display: none;		
+}
+
+#scroll {
+	height: 23px;
+	width: 13px;
+}
+
+#caja_ingresar{
+	padding:64px 20px;
+	margin-top: 40px;
+}
+
+.h2_caja_ingresar{
+	font-size: 1.5em;
+}
+
+.caja_formulario {
+	width: 200px;
+}
+
+.boton_formulario {
+	width: 160px;
+	height: 50px;
+}
+
+#circulo_scroll {
+	height: 3px;
+	width: 3px;
+}
+
+.texto_club_socios {
+  margin: 100px 0px;
+}
+
+.footer_landing {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	z-index:50;
+}
+
+.footer_home{
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	z-index:50;
+	position: relative;	 	
+}
+	
+#posicion_redes_footer {
+	padding: 10px 0px;
+}
+
+#posicion_texto_footer {
+	padding: 10px 0px;
+	text-align: center;
+}
+
+/* Landing Tablet */
+@media (min-width: 321px)and (max-width: 1050px) {
+
+body{
+	font-size: 1em;
+}	
+
+#header_landing {
+    align-items: center
+}
+	
+#logo {
+	display:none;
+}
+
+#logo_mini {
+	margin-right: 70px;
+}
+
+#nav_landing {
+  display: none;		
+}
+
+#caja_ingresar{
+	padding:64px 45px;
+	margin-top: 80px;
+}
+
+.caja_formulario {
+	width: 300px;
+}
+
+.boton_formulario {
+	width: 250px;
+	height: 65px;
+}
+
+#scroll {
+	height: 30px;
+	width: 20px;
+}
+
+#circulo_scroll {
+	height: 5px;
+	width: 5px;
+}
+
+.texto_club_socios {
+  margin: 150px 0px;
+}
+
+.footer_landing {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;	
+}
+
+.footer_home {
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;	
+}
+
+#posicion_redes_footer {
+	padding: 16px 0px;
+}
+
+#posicion_texto_footer {
+  padding: 16px 0px;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+/* mi perfil media */
+.contenedor_perfil{
+	width: 200px;
+}
+
+.seccion_perfil{
+	margin: 140px 0px 0px 0px;
+	flex-direction: row;
+	padding: 30px 0px 160px;
+}
+
+.contenedor_perfil{
+	display: flex;
+	width: 400px;
+	height: 655px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0px 30px;
+}
+
+.titulo_perfil{
+	font-size: 2em;
+	padding: 20px 0px 30px 0px;
+}
+
+.titulo_datos{
+	font-size: 1.2em;
+	padding: 0px 0px 10px 0px;
+}
+
+.caja_datos{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-content: center;
+ justify-content: space-around;
+ align-items: center;
+ padding: 10px 0px 20px 0px;
+}
+
+.columna_datos1{
+	width: 250px;
+}
+
+.columna_datos1 li{
+	list-style: none;
+}
+
+.columna_datos2{
+	width: 250px;
+}
+
+.columna_datos2 li{
+	padding: 4px 0px;
+}
+
+.caja_datos_titulo{
+	font-size: 0.8em;
+	padding: 10px 0px 5px 0px;
+}
+
+.caja_datos_texto{
+	font-size: 1em;
+}
+
+.contenedor_avatar{
+	display: flex;
+	width: 395px;
+	height: 655px;
+	flex-direction: column;
+}
+
+#nombre_socio{
+	font-size: 1.8em;
+}
+
+#numero_socio{
+	font-size: 1.2em;
+	padding: 0px 0px 5px 0px;
+}
+
+#estado_socio{
+	font-size: 1em;
+}
+
+#cambiar_categoria{
+	font-size: 0.7em;
+	padding: 0px 0px 30px 0px;
+}
+}
+}

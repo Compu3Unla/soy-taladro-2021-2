@@ -1,0 +1,22 @@
+Hola! 
+
+Les comentamos algunas cosas para esta entrega final:
+
+Los links que funcionan son:
+
+Landing Page: el botón Asociate --> Formulario  (te lleva a una ventana modal que se cierra solo con la x)
+
+Logo Banfield en el Home (te lleva al home)
+
+Menú opción Club Banfield --> Deportes (te lleva a Deportes.html)
+		             --> In a tienda (te lleva a un link externo a la tienda de Banfield)
+
+Además hicimos un menú animado que se achica cuando scrolleas hacia abajo :)
+
+Avatar(con flechita) --> Mi perfil (te lleva mi_perfil.html
+		 --> Cerrar seción (te lleva al landing page/index)
+
+Deportes.html --> Fútbol (te lleva a una ventana modal que se cierra solo con la x)
+
+
+Aguante el Taladro y si les gustó la página estan invitados a asociarse!! :)
